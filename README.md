@@ -20,7 +20,40 @@ BarbaBB is a friendly, modular algorithmic trading platform inspired by the Barb
 - `barbabb/tests`: Tests
 
 ## Getting Started
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run: `python main.py`
+
+### Installation
+
+#### Option 1: Quick Install (Recommended)
+```bash
+pip install -r requirements.txt
+```
+
+#### Option 2: Local Development with OpenBB Fork
+If you need to modify OpenBB alongside BarbaBB:
+
+```bash
+# Clone the OpenBB fork (if not already cloned)
+git clone https://github.com/barbapapadev-ops/OpenBB.git
+cd OpenBB
+git checkout develop
+
+# Install OpenBB in editable mode
+pip install -e .
+
+# Return to BarbaBB and install other dependencies
+cd ../BarbaBB
+pip install matplotlib
+```
+
+### Running BarbaBB
+```bash
+python main.py
+```
+
+## Dependencies
+
+- **OpenBB**: We use our own fork at [barbapapadev-ops/OpenBB](https://github.com/barbapapadev-ops/OpenBB) (branch: `develop`)
+  - This fork includes custom modifications for BarbaBB
+- **matplotlib**: For visualization
 
 BarbaBB is your smart, helpful trading assistant. Happy trading!

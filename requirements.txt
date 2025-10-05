@@ -1,2 +1,4 @@
-openbb
+# OpenBB fork with custom modifications
+# Install from our fork's develop branch
+git+https://github.com/barbapapadev-ops/OpenBB.git@develop#egg=openbb
 matplotlib
